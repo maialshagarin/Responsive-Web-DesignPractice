@@ -1,0 +1,89 @@
+* {
+    box-sizing: border-box; /*make each browser work the same  */
+}
+div , aside , footer , header {
+    background : gray ;
+    border : 1px  solid block ;
+}
+main{
+    margin: auto;
+    width: 100%;
+}
+
+
+/* on desketop */
+@media screen and (min-width :960px){
+  main {
+      width: 960px;
+  }
+    section{    
+        overflow: hidden;
+    }
+div , aside , footer , header {
+    float: left;
+     
+     width: 100%; 
+}
+
+header{
+    height: 100px;
+    width: 960px; ;
+}
+aside{
+    height:600px ;
+    width:200px;
+}
+.two {
+    height:200px ;
+    width: 380px;
+}
+.four {
+    height:250px ;
+    width: 190px;
+}
+footer{
+    height: 150px;
+    width: 760px;
+}
+}
+
+
+/* on mobile screen */
+ @media screen and (max-width :960px){
+     main {
+         width: 480px;
+     }
+     section{    
+        overflow: hidden;
+    }
+     div , aside , footer , header {
+        float: left;
+         
+         width: 100%; 
+    }
+
+     header {
+         height: 75px ;
+        
+     }
+     aside {
+         height: 150px;
+     }
+     .two {
+         height: 125px;     
+         width: 480px;
+     }
+     .four{
+         height: 250px;     
+         width: 240px;
+     }
+footer {
+    height: 80px;
+}
+footer {
+    border-top: none;
+}
+.two , .four {
+    border-top: none;
+}
+} 
